@@ -17,8 +17,8 @@ app.use("/api/products", product_route);
 const start = async () => {
   try {
     await connectDB();
-    app.listen(port, () => {
-      console.log(`Listening at Port  ${port} `);
+    app.listen(PORT, () => {
+      console.log(`Listening at Port  ${PORT} `);
     });
   } catch (error) {
     console.log("500 Internal Server Error");
