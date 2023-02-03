@@ -8,9 +8,9 @@ const connectDB = require("./db/connect");
 
 app.use("/api/products", product_route);
 
-// app.get("/", (req, res) => {
-//   res.status(200).json({"msg":"Hey I am Live Now!"});
-// });
+app.get("/", (req, res) => {
+  res.status(200).json({"msg":"Hey I am Live Now!"});
+});
 
 // Here we are creating our alternate database connection
 
